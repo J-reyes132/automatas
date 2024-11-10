@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura del Compilador</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col">
+
+    <!-- Navbar -->
+    <div class="bg-gradient-to-r from-red-500 via-blue-500 to-purple-600 text-white shadow-md">
+        <nav class="container px-6 py-4 mx-auto flex justify-between items-center">
+            <a class="text-2xl font-bold text-white hover:text-yellow-300" href="index.html">Teoría de Compiladores</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="definicion.html" class="hover:text-yellow-300">Definición</a>
+                <a href="estructura.html" class="hover:text-yellow-300">Estructura</a>
+                <a href="generacion.html" class="hover:text-yellow-300">Generación de Código</a>
+                <a href="fases.html" class="hover:text-yellow-300">Fases</a>
+                <a href="compiladores.html" class="hover:text-yellow-300">Compiladores Actuales</a>
+                <a href="referencias.html" class="hover:text-yellow-300">Referencias</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Content -->
+    <main class="container mx-auto px-6 py-16 flex-grow">
+        <div class="p-6 bg-white rounded-lg shadow-lg border-l-4 border-green-500">
+            <h1 class="text-3xl font-bold text-green-600 mb-4">Estructura del Compilador</h1>
+            <p class="text-lg text-gray-600 mb-4">
+                La estructura de un compilador se divide principalmente en dos componentes: el front-end y el back-end.
+                Cada uno de estos componentes juega un rol esencial en la conversión del código fuente al código ejecutable.
+            </p>
+            <h2 class="text-2xl font-semibold text-green-600 mt-6 mb-2">Front-end del Compilador</h2>
+            <p class="text-lg text-gray-600 mb-4">
+                El front-end se encarga de analizar y procesar el código fuente mediante las siguientes fases:
+            </p>
+            <ul class="text-lg text-gray-600 list-disc pl-6 space-y-2">
+                <li><strong>Análisis Léxico:</strong> Convierte el código en una serie de tokens, identificando elementos básicos como palabras clave y operadores.</li>
+                <li><strong>Análisis Sintáctico:</strong> Verifica la estructura gramatical del código, construyendo un árbol de sintaxis.</li>
+                <li><strong>Análisis Semántico:</strong> Asegura que las declaraciones y operaciones sean lógicas y correctas según las reglas del lenguaje.</li>
+            </ul>
+
+            <h2 class="text-2xl font-semibold text-green-600 mt-6 mb-2">Back-end del Compilador</h2>
+            <p class="text-lg text-gray-600 mb-4">
+                El back-end toma el código intermedio y lo optimiza para luego convertirlo en código ejecutable. Sus funciones incluyen:
+            </p>
+            <ul class="text-lg text-gray-600 list-disc pl-6 space-y-2">
+                <li><strong>Optimización:</strong> Elimina redundancias y mejora la eficiencia del código, optimizando el uso de recursos.</li>
+                <li><strong>Generación de Código:</strong> Traduce el código intermedio a instrucciones específicas de la máquina objetivo.</li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6 mt-auto">
+        <p>© 2024 Proyecto Teoría de Compiladores - Grupo 4</p>
+    </footer>
+</body>
+</html>
